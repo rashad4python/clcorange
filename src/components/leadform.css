@@ -1,0 +1,97 @@
+/* General Styling for Lead Form */
+.lead-form-section {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lead-form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Lead Form Heading */
+  .lead-form-heading h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .lead-form-heading h3 {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(90deg, #f06a21, #fcb900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Form Layout */
+  .lead-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lead-form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Form Submit Button */
+  .form-group-submit {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .lead-form-submit {
+    padding: 10px 20px;
+    background-color: #f06a21;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lead-form-submit:hover {
+    background-color: #d9591b;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .lead-form-row {
+      flex-direction: column;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  }
+  

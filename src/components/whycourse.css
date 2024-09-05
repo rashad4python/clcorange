@@ -1,0 +1,51 @@
+.section-feature {
+    padding: 50px 0;
+  }
+  
+  .section-feature h2 {
+    display: flex;
+    justify-content: center; /* Centers the heading horizontally */
+    align-items: center;     /* Aligns items vertically in the flex container */
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;      /* Centers text within the heading */
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center;     /* Centers content horizontally */
+    margin-bottom: 30px;
+    text-align: center;      /* Ensures text within the feature is centered */
+  }
+  
+  .feature h3 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 10px;     /* Adds some space below the h3 for better layout */
+  }
+  
+  .feature-content h4 {
+    font-size: 1.5em;
+    color: #181111;
+    margin-bottom: 10px;     /* Adds some space below the h4 for better layout */
+  }
+  
+  .feature-content p {
+    font-size: 1em;
+    color: #777;
+    max-width: 600px;        /* Restricts the width of the paragraph for better readability */
+    margin: 0 auto;          /* Centers the paragraph within the feature-content */
+  }
+  .col-md-6  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+  

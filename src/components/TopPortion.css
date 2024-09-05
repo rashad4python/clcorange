@@ -1,0 +1,95 @@
+/* Carousel Wrapper */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Scrollable wrapper for the carousel items */
+.scrollable-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* Each topusptextcontainer represents a carousel item */
+.topusptextcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%; /* Make sure each item takes the full width of the wrapper */
+  box-sizing: border-box;
+  padding: 20px;
+}
+.nostaffimage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.staffimage {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    
+  }
+  .model{
+    width:100%;
+    padding: 20px;
+    height: auto; /* Fixed dimensions */
+    object-fit: cover; /* Ensure the image covers the dimensions without stretching */
+  }
+
+/* Responsive behavior for larger screens */
+@media (min-width: 768px) {
+  .topusptextcontainer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+/* Styling for the image and text portions */
+.staffimage, .nostaffimage {
+  flex: 1;
+}
+
+.staffimage  {
+  width: 100%;
+  height: auto;
+  padding-left: 50px;
+  object-fit: contain;
+}
+
+/* WhatsApp button container */
+
+
+.button {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-icon {
+  margin-right: 10px;
+}
+
+/* Highlighted text */
+.highlight-text {
+  color: #f06a21;
+}
+
+/* Additional utility styling */
+.topusptext {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.topuspsmall {
+  text-align: center;
+  font-size: 1rem;
+}

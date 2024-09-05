@@ -1,0 +1,70 @@
+/*website logo color= #f06a21*/
+/* Base styles for the entire site */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+  color: #333; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  background-color: #f5f5f5; /* Background color */
+  line-height: 1.6; /* Line height for readability */
+}
+
+/* Link styles */
+a {
+  color: #007acc; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Main content styles */
+main {
+  padding: 1rem; /* Padding around main content */
+  max-width: 1200px; /* Maximum width for main content */
+  margin: 0 auto; /* Center align main content */
+}
+
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0; /* Bottom margin for headings */
+  font-weight: bold; /* Bold font for headings */
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem; /* Bottom margin for paragraphs */
+  margin: 0;
+  
+}
+
+/* Add styles for forms, buttons, etc. here */
+/* Example:
+form {
+  margin: 1rem 0;
+}
+
+button {
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f8d;
+}
+*/
+
+/* Add additional global styles as needed */
