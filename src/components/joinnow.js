@@ -9,20 +9,20 @@ const JoinNow = () => {
         {/* Image Container */}
         <div className="image-container">
         <StaticImage
-                  src="../images/model.jpg"
-                  alt="CLC Logo"
+                  src="../images/models.png"
+                  alt="joinnow"
                   className="model"
                 />
         </div>
 
         {/* Text Container */}
         <div className="text-container">
-          <h2 className="joinnow-heading">New Batch Starts Today</h2>
-          <h2 className="joinnow-subheading">Join Now</h2>
-          <span className="joinnow-availability">Only 75 seats left for our spoken English classes</span>
+          <h2 className="joinnow-heading">We take only Limited students every month </h2>
+          <h2 className="joinnow-subheading">Book your seats</h2>
+          <span className="joinnow-availability">Be it IELTS | OET | PTE | German</span>
           <div className="whatsapp-button-wrapper">
             <a
-              href="https://wa.me/+918075259662"
+              href="https://wa.me/+919605833311"
               className="whatsapp-button"
               target="_blank"
               rel="noopener noreferrer"

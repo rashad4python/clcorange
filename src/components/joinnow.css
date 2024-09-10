@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: inherit;
   }
   
   /* Join Now Container */
@@ -39,21 +39,21 @@
   }
   
   .joinnow-heading {
-    font-size: 2rem;
-    color: #333;
+    color: inherit;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .joinnow-subheading {
-    font-size: 1.8rem;
-    color: #f06a21;
+    color: #007acc;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .joinnow-availability {
-    font-size: 1.2rem;
-    color: #555;
+    color: inherit;
     margin-bottom: 30px;
+    text-align: center;
   }
   
   /* WhatsApp Button Styling */
@@ -67,15 +67,17 @@
     align-items: center;
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #25d366;
-    color: white;
+    background-color: #007acc;
+    color:black;
+    font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
   }
   
   .whatsapp-button:hover {
-    background-color: #1ebd5a;
+    transform: scale(1.2);
   }
   
   .whatsapp-button i {

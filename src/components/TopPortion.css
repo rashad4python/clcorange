@@ -16,7 +16,7 @@
 .topusptextcontainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-width: 100%; /* Make sure each item takes the full width of the wrapper */
   box-sizing: border-box;
@@ -28,24 +28,29 @@
   justify-content: center;
   align-items: center;
 }
-.staffimage {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    padding: 20px;
-    
-  }
+.staffimage  {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center; 
+}
   .model{
     width:100%;
     padding: 20px;
+    max-width: 354px;
     height: auto; /* Fixed dimensions */
     object-fit: cover; /* Ensure the image covers the dimensions without stretching */
+  }
+  .whatsapp-button-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
   }
 
 /* Responsive behavior for larger screens */
 @media (min-width: 768px) {
   .topusptextcontainer {
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -53,26 +58,36 @@
 .staffimage, .nostaffimage {
   flex: 1;
 }
-
-.staffimage  {
-  width: 100%;
-  height: auto;
-  padding-left: 50px;
-  object-fit: contain;
+.nostaffimage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.staffimage {
+  display: flex;
+  justify-content: flex-end;  /* Centers horizontally */
+  align-items: center; 
 }
 
 /* WhatsApp button container */
 
 
 .button {
-  background-color: #25d366;
-  color: white;
+  background-color: #007acc;
+  color: black;
+  font-weight: bolder;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
+  transition: transform 0.3s ease;
 }
+.button:hover{
+  transform: scale(1.2);
+}
+
 
 .button-icon {
   margin-right: 10px;
@@ -81,15 +96,22 @@
 /* Highlighted text */
 .highlight-text {
   color: #f06a21;
+  text-shadow: 0.5px 1px #f06a21;
+}
+.highlight-text:hover{
+  color: #007acc;
+  text-shadow: 0.5px 1px #007acc;
 }
 
 /* Additional utility styling */
 .topusptext {
   text-align: center;
-  font-size: 1.5rem;
+  font-weight: bolder;
+  /* text-shadow: 0.5px 1px #f06a21 ; */
+  padding: 10px;
 }
 
 .topuspsmall {
   text-align: center;
-  font-size: 1rem;
+  font-weight: bolder;
 }

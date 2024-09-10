@@ -3,7 +3,7 @@ import "../styles/style.css";
 // src/App.js
 import Header from '../components/header'; // Ensure casing matches
 import TopPortion from "../components/TopPortion";
-import Welcome from "../components/welcome";
+// import Welcome from "../components/welcome";
 import Course from "../components/course";
 import Review from "../components/review";
 import Joinnow from "../components/joinnow";
@@ -17,17 +17,16 @@ import Whycourse from "../components/whycourse";
 
 const IndexPage = () => (
   <div>
-    <Header className='header' />
-    {/* <main className="content">
+    <Header />
+    <main className="content">
       <TopPortion />
-      <Welcome />
       <Course/>
       <Review/>
       <Joinnow/>
-      <LeadForm/>
+      {/* <LeadForm/> */}
     
-      <Footer/>
-    </main> */}
+      <Footer/>  
+    </main>
 
     
   </div>

@@ -2,34 +2,37 @@
 /* Base styles for the entire site */
 
 /* Reset some default browser styles */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* General body styles */
 body {
-  color: #333; /* Text color */
-  font-family: Arial, sans-serif; /* Font family */
-  background-color: #f5f5f5; /* Background color */
+  color: white; /* Text color */
+  font-family: CustomFont, serif; /* Font family */
+  background-color: #000000; /* Background color */
   line-height: 1.6; /* Line height for readability */
 }
 
 /* Link styles */
 a {
-  color: #007acc; /* Link color */
+  color: #f06a21; /* Link color */
   text-decoration: none; /* Remove underline from links */
 }
 
 a:hover {
-  text-decoration: underline; /* Underline links on hover */
+  transform: scale(1.1); /* Underline links on hover */
 }
 
 /* Main content styles */
 main {
   padding: 1rem; /* Padding around main content */
-  max-width: 1200px; /* Maximum width for main content */
+  max-width: 1000px; /* Maximum width for main content */
   margin: 0 auto; /* Center align main content */
 }
 
@@ -39,6 +42,15 @@ main {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0; /* Bottom margin for headings */
   font-weight: bold; /* Bold font for headings */
+  
+  font-size: 5vw; /* Font size will be 5% of the viewport width */
+  
+}
+@media(max-width:768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 5vw;
+  }
+  
 }
 
 /* Paragraphs */

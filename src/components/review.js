@@ -78,7 +78,8 @@ const Review = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  useEffect(() => {
+  useEffect(() =>{
+    if (typeof window !== 'undefined') {
     // Update the number of visible reviews when the component mounts
     updateVisibleReviewsCount();
 
@@ -89,6 +90,7 @@ const Review = () => {
     return () => {
       window.removeEventListener('resize', updateVisibleReviewsCount);
     };
+    }
   }, []);
 
   // Move to the next review
@@ -115,9 +117,9 @@ const Review = () => {
       <div className="review-container">
         {/* Static Review Info */}
         <div className="static-review-container">
-          <h2 className="static-review-title">Voices of <span className='highlightt'>our students</span></h2>
+          <h2 className="static-review-title"><span className='highlightt'>കിട്ടും ഉറപ്പാണ്,</span> <br/>ഞങ്ങളുടെ students സാക്ഷ്യം </h2>
           <p className="static-review-text">
-            We value the feedback of our students. Here's what they have to say about our courses.
+            Listen to what our students say about us.
           </p>
           <div className='google-rating-total'>
             <div className='google-image-star'>
@@ -127,12 +129,12 @@ const Review = () => {
                       className="google-image"
                     />
               </div>      
-              <div class="star-rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star half">&#9733;</span>
+              <div className="star-rating">
+                <span className="star">&#9733;</span>
+                <span className="star">&#9733;</span>
+                <span className="star">&#9733;</span>
+                <span className="star">&#9733;</span>
+                <span className="star half">&#9733;</span>
               </div>    
             </div>
             <div className='rating'>

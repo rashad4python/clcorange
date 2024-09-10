@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 2px solid red;
+    /* border: 2px solid #f06a21; */
     width: 100%;
     overflow: hidden; /* Ensures the cards are not cut off */
   }
@@ -15,17 +15,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: #B3AB9A;
+    background: inherit;
     padding: 20px;
     border-radius: 30px;
-    border: 2px solid black;
+    border: 2px solid #f06a21;
     margin: 10px;
     width: 100%;
   }
   
   .profile-photo {
     max-width: 40px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   
   .name-foto-date {
@@ -43,7 +43,7 @@
     justify-content: flex-start;
     padding: 2px;
     margin: 0px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   
   .date {
@@ -73,42 +73,40 @@
   }
   
   .static-review-title {
-    font-size: 24px;
-    font-weight: bold;
-    border: 2px solid red;
+    font-weight: bolder;
+    /* border: 2px solid red; */
   }
   
   .static-review-text {
     font-size: 16px;
-    color: #555;
     padding: 30px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
   }
 
   .static-review-title {
-    font-size: 36px; /* Increase size of the heading */
-    color: #333; /* Default color for the heading */
+    /* font-size: 36px; Increase size of the heading */
+    color:inherit; /* Default color for the heading */
     
   }
   /* Styling for the highlighted text */
     .highlightt {
-    color: #ff5733; /* Color of the highlighted text */
-    font-weight: bold; /* Optional: make the text bold */
+    color: #2594d2; /* Color of the highlighted text */
+    font-weight: bolder; /* Optional: make the text bold */
   }
   .google-rating-total{
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .google-image-star{
     display: flex;
-    border: 2px solid rgb(148, 72, 72);
+    /* border: 2px solid rgb(148, 72, 72); */
 
   }
   .google-image-container{
     width: auto;
     height:auto;
     padding:2px;
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
   }
   .google-image {
     width: 30px;
@@ -128,7 +126,7 @@
   
   .star.half::after {
     content: '\2605'; /* Unicode star */
-    color: #fff;
+    color: inherit;
     position: absolute;
     width: 50%;
     overflow: hidden;

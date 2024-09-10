@@ -4,18 +4,27 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "homepage": "https://rashad4python.github.io/clcorange"
+,
   "dependencies": {
-    "gatsby": "^2.13.57",
-    "gatsby-plugin-image": "^0.7.2",
-    "gatsby-plugin-manifest": "^2.6.1",
-    "gatsby-plugin-sharp": "^2.14.4",
-    "gatsby-source-filesystem": "^2.11.1",
-    "gatsby-transformer-sharp": "^2.12.1",
+    "@babel/core": "^7.12.3",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "gatsby": "^5.13.7",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
     "node": "^22.7.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.25.1",
+    "eslint": "^9.10.0",
+    "gh-pages": "^6.1.1",
     "prettier": "^2.8.8"
   },
   "keywords": [
@@ -23,13 +32,15 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  "build": "gatsby build",
+  "develop": "gatsby develop",
+  "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+  "start": "gatsby develop",
+  "serve": "gatsby serve",
+  "clean": "gatsby clean",
+  "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+  "predeploy": "gatsby build",
+  "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -38,4 +49,5 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
+  
 }
