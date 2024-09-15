@@ -8,11 +8,12 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: `/test.clccalicut.com/clcorange`, // The path where your site is hosted
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: "CLC IELTS Coaching",
+    description: "Premier IELTS coaching centre in Kozhikode. We provide the best preparatory classes for IELTS success.",
+    author: "CLC",
+    siteUrl: "https://test.clccalicut.com", // URL of your subdomain
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -30,14 +31,12 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/`,
+        start_url: `/`, // This should remain the same.
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
   ],
 }
+
