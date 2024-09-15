@@ -8,7 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: `/test.clccalicut.com/clcorange`, // The path where your site is hosted
+  pathPrefix: `/clcorange`, // The path where your site is hosted
   siteMetadata: {
     title: "CLC IELTS Coaching",
     description: "Premier IELTS coaching centre in Kozhikode. We provide the best preparatory classes for IELTS success.",
